@@ -1,114 +1,117 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Engenharia de Projetos</title>
+<title>Engenharia | Soluções Industriais</title>
 
 <link rel="stylesheet" href="css/style.css">
 
-<!-- Fonte moderna -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
 
 </head>
 
 <body>
 
 <!-- NAV -->
-<nav>
-    <div class="logo-container">
-        <div class="logo-icon">⚙</div>
-        <span>Engenharia</span>
-    </div>
-
+<nav class="nav">
+    <div class="logo">⚙ ENGENHARIA</div>
     <ul>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portfolio">Projetos</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
     </ul>
 </nav>
 
 <!-- HERO -->
-<header>
-    <div class="hero-content">
-        <h1>Engenharia de Projetos</h1>
-        <p>Projetos industriais, melhoria de processos e soluções estratégicas</p>
+<header class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Soluções em Engenharia Industrial</h1>
+        <p>Projetos, otimização e resultados reais para sua empresa</p>
         <a href="#contato" class="btn">Fale comigo</a>
     </div>
 </header>
 
 <!-- SOBRE -->
-<section id="sobre">
+<section id="sobre" data-aos="fade-up">
     <h2>Sobre</h2>
-    <p>
-        Profissional especializado em engenharia de projetos industriais,
-        com foco em eficiência operacional, qualidade e inovação.
-    </p>
+    <p>Especialista em engenharia de projetos industriais, melhoria contínua e aumento de produtividade.</p>
 </section>
 
-<!-- PORTFÓLIO -->
-<section id="portfolio">
-    <h2>Projetos</h2>
-
+<!-- PROJETOS -->
+<section id="projetos">
+    <h2 data-aos="fade-up">Projetos</h2>
     <div class="cards">
-        <div class="card">
-            <h3>Linha de Produção</h3>
-            <p>Desenvolvimento completo de layout industrial.</p>
+
+        <div class="card" data-aos="fade-up">
+            <h3>Balanceamento de Linha</h3>
+            <p>Redução de tempo produtivo em 20%.</p>
         </div>
 
-        <div class="card">
-            <h3>Automação</h3>
-            <p>Implantação de soluções automatizadas.</p>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Automação Industrial</h3>
+            <p>Implantação de sistemas automatizados.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
             <h3>Redução de Custos</h3>
-            <p>Otimização de processos produtivos.</p>
-        </div>
-    </div>
-</section>
-
-<!-- EXPERIÊNCIA -->
-<section id="experiencia">
-    <h2>Experiência</h2>
-
-    <div class="timeline">
-        <div class="item">
-            <h3>Engenheiro de Projetos</h3>
-            <p>Desenvolvimento de soluções industriais e melhoria contínua.</p>
+            <p>Otimização com foco em eficiência.</p>
         </div>
 
-        <div class="item">
-            <h3>Gestão de Produção</h3>
-            <p>Otimização de processos e liderança de equipe.</p>
-        </div>
     </div>
 </section>
 
 <!-- CONTATO -->
-<section id="contato">
+<section id="contato" data-aos="fade-up">
     <h2>Contato</h2>
 
-    <form id="formContato">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Mensagem"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+    <form name="contato" method="POST" data-netlify="true" class="form">
+        <input type="hidden" name="form-name" value="contato">
 
-    <p id="msg"></p>
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensagem</button>
+        <p class="form-msg"></p>
+    </form>
 </section>
 
-<!-- WHATS -->
-<a href="https://wa.me/5535984067208" class="whatsapp">💬</a>
+<!-- CHATBOX -->
+<div class="chatbox">
+    <div class="chat-header">Atendimento</div>
+    <div class="chat-body" id="chat-body">
+        <p>Olá! 👋 Como posso ajudar?</p>
+    </div>
+    <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/5599999999999" class="whatsapp">💬</a>
 
 <footer>
-    <p>© 2026 Engenharia de Projetos</p>
+    <p>© 2026 Engenharia | Portfólio profissional</p>
 </footer>
 
 <script src="js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
