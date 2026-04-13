@@ -275,4 +275,20 @@ input, textarea {
     .menu li {
         padding: 15px;
     }
+.artigo {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.artigo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.artigo p {
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
 }
