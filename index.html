@@ -4,23 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Engenharia | Soluções Industriais</title>
+<title>Engenharia de Projetos | Melhoria Contínua</title>
 
 <link rel="stylesheet" href="css/style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-<!-- GOOGLE ANALYTICS -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
-</script>
 
 </head>
 
@@ -28,90 +16,95 @@ gtag('config', 'G-XXXXXXXXXX');
 
 <!-- NAV -->
 <nav class="nav">
-    <div class="logo">⚙ ENGENHARIA</div>
-    <ul>
+    <div class="logo">
+        <span class="logo-icon">▣</span>
+        Engenharia
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul id="menu">
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#contato">Contato</a></li>
     </ul>
 </nav>
 
+<div class="overlay" id="overlay"></div>
+
 <!-- HERO -->
 <header class="hero">
-    <div class="hero-content" data-aos="fade-up">
-        <h1>Soluções em Engenharia Industrial</h1>
-        <p>Projetos, otimização e resultados reais para sua empresa</p>
+    <div class="hero-content">
+        <h1>Engenharia de Projetos</h1>
+        <p>Melhoria contínua em processos produtivos de eletrônicos e montagem de placas (PCB)</p>
         <a href="#contato" class="btn">Fale comigo</a>
     </div>
 </header>
 
 <!-- SOBRE -->
-<section id="sobre" data-aos="fade-up">
+<section id="sobre">
     <h2>Sobre</h2>
-    <p>Especialista em engenharia de projetos industriais, melhoria contínua e aumento de produtividade.</p>
+    <p>
+        Atuação focada em engenharia de processos para produção eletrônica, com ênfase em montagem de placas (PCB),
+        melhoria contínua, redução de desperdícios e aumento de eficiência produtiva.
+    </p>
 </section>
 
-<!-- PROJETOS -->
-<section id="projetos">
-    <h2 data-aos="fade-up">Projetos</h2>
+<!-- SERVIÇOS -->
+<section id="servicos">
+    <h2>Serviços</h2>
+
     <div class="cards">
 
-        <div class="card" data-aos="fade-up">
-            <h3>Balanceamento de Linha</h3>
-            <p>Redução de tempo produtivo em 20%.</p>
+        <div class="card">
+            <h3>Melhoria de Processos</h3>
+            <p>Otimização de linhas SMT e THT, aumento de produtividade e redução de falhas.</p>
         </div>
 
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-            <h3>Automação Industrial</h3>
-            <p>Implantação de sistemas automatizados.</p>
+        <div class="card">
+            <h3>Engenharia de Produção</h3>
+            <p>Balanceamento de linha, análise de tempos e definição de fluxo produtivo.</p>
         </div>
 
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-            <h3>Redução de Custos</h3>
-            <p>Otimização com foco em eficiência.</p>
+        <div class="card">
+            <h3>Qualidade e Testes</h3>
+            <p>Implementação de controles, inspeção e melhoria de qualidade em montagem eletrônica.</p>
         </div>
 
     </div>
 </section>
 
 <!-- CONTATO -->
-<section id="contato" data-aos="fade-up">
+<section id="contato">
     <h2>Contato</h2>
 
-    <form name="contato" method="POST" data-netlify="true" class="form">
-        <input type="hidden" name="form-name" value="contato">
+    <form class="form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem" required></textarea>
 
-        <input type="text" name="nome" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-
-        <button type="submit" class="btn">Enviar mensagem</button>
+        <button class="btn">Enviar</button>
         <p class="form-msg"></p>
     </form>
 </section>
 
-<!-- CHATBOX -->
+<!-- CHAT -->
 <div class="chatbox">
     <div class="chat-header">Atendimento</div>
     <div class="chat-body" id="chat-body">
-        <p>Olá! 👋 Como posso ajudar?</p>
+        <p>Olá! 👋 Posso te ajudar com projetos de engenharia.</p>
     </div>
     <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
 </div>
 
-<!-- WHATSAPP -->
+<!-- WHATS -->
 <a href="https://wa.me/5535984067208" class="whatsapp">💬</a>
 
 <footer>
-    <p>© 2026 Engenharia | Portfólio profissional</p>
+    <p>© 2026 Engenharia de Projetos</p>
 </footer>
 
 <script src="js/script.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({ duration: 1000, once: true });
-</script>
 
 </body>
 </html>
